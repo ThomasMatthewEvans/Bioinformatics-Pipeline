@@ -2,7 +2,7 @@
 
 # Imports module, signs with registered email
 from Bio import Entrez 
-Entrez.email = "t-m-evans@hotmail.com"
+Entrez.email = "************"
 
 #MADE FOR NUCCORE BUT OTHER DBS WORK NOT SO WELL THOUGH
 
