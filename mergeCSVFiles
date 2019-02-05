@@ -1,0 +1,36 @@
+# T EVANS
+# 27 Sep 2018
+# https://stackoverflow.com/questions/2512386/how-to-merge-200-csv-files-in-python
+# https://stackoverflow.com/questions/42919076/python-charmap-codec-cant-decode-byte-x-in-position-y-character-maps-to-undefi
+
+import csv                                          # Only need the csv module for this method
+
+fout=open("outnewputs.csv","a",encoding="utf8")             # Opens the oputput file, in this case it is called outnewputs
+for num in range(8,10):                                     # Iterate over the file nmbers to be merged
+    if num <10:                                             # Adds a 0 prior the number, i.e. if the number is 9 it changes it ot 09
+        num = "0"+str(num)
+    for line in open("outputs"+str(num)+".csv", 'r', encoding='utf-8'):     #Opens each file -run25,run26 etc, ensure opening is as a UTF-8 format
+         fout.write(line)                           # Writes line by line
+fout.close()                                        # Closes the output file
+
+
+
+
+
+# Additional way below with merged headers
+
+"""
+Merges with headers
+fout=open("out.csv","a")
+# first file:
+for line in open("run25.csv"):
+    fout.write(line)
+# now the rest:    
+for num in range(26,33):
+    f = open("run"+str(num)+".csv")
+    f.next() # skip the header
+    for line in f:
+         fout.write(line)
+    f.close() # not really needed
+fout.close()
+"""
