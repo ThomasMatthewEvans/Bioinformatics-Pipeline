@@ -12,6 +12,12 @@ Used in combination with a macros excell file to format nicely
 2 Disease Name to Gene
 input a csv or a list, output as a csv or a list TODO TODO TODO
 
+todo
+Gene to sequence etc
+
+3 Sequence analyser 
+Used to manipulate sequences. Input as a csv TODO or a list, creates multiple operatioms on the sequence analyser
+
 
 Small Methods Used to Streamline Projects
 
