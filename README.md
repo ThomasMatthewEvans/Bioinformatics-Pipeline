@@ -10,7 +10,7 @@ Searches papers and spits out results
 Used in combination with a macros excell file to format nicely
 
 2 Disease Name to Gene
-
+input a csv or a list, output as a csv or a list TODO TODO TODO
 
 
 Small Methods Used to Streamline Projects
